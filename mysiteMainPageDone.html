@@ -5,279 +5,31 @@
     <head>
         <title> Blankets and pillows store </title>
            <meta charset="utf-8">  
-           <link href="2018.09.27 ht website\style.css" rel = "stylesheet">
-           <link 
-           rel="stylesheet"  
-           type="text/css" 
-           href="cv2.css">
+           <link href="./style.css" rel = "stylesheet">
+
            <link href="https://fonts.googleapis.com/css?family=Pacifico&amp;subset=cyrillic" rel="stylesheet">
            <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Pacifico&amp;subset=cyrillic" rel="stylesheet">
     </head>
    
     <body>
 
-            <style>
-    
-                    body
-                {
-                  margin: 0;
-                  max-width: 960px;
-                 /* border: 1px solid yellow; */
-                }
-                
-                .containerhead
-                {
-                    display: flex;  /* указываем что работаем с флексами*/
-                  flex-direction: row; /*   row (значение по умолчанию) : слева направо (в rtl справа налево)
-                                            row-reverse: справа налево (в rtl слева направо)
-                                            column: сверху вниз
-                                            column-reverse: снизу вверх*/
-                  flex-wrap: wrap-reverse; /*блоки расположены в несколько горизонтальных рядов (если не помещаются в один ряд). Они следуют друг за другом слева направо
-                  */
-                  justify-content: space-around; /* */
-                   align-items: stretch; /* */
-                   align-content: center; /*align-content, которое определяет то, каким образом образовавшиеся ряды блоков будут выровнены по вертикали и как они поделят между собой все пространство flex-контейнера.
-                Важно: align-content работает только в многострочном режиме (т.е. в случае flex-wrap:wrap; или flex-wrap:wrap-reverse;) */
-                  height: 60px; /* */
-                  
-                  background: blueviolet;
-                  font-family: 'Pacifico', cursive;
-                font-family: 'Noto Serif', serif;
-                
                  
-                }
-                
-                .box
-                {
-                  
-                  color: blanchedalmond;
-                  font-size: 15px;
-                  text-align: center;
-                  line-height: 80px;
-                  width: 200px;
-                  cursor: pointer; 
-                  
-                }
-               
-
-                .containerpicture {
-                /*   border: 1px solid red; */
-                padding-top: 50px;
-                background-image: url("C:/Users/Alina/projects/2018.09.27 ht website/img/SleepingWoman.jpg");
-                height: 300px;
-                margin:0;
-
-            }
-                
-                .containerpicture h1 {
-                  /*  border: 1px solid blue; */
-                    font-size: 40px;
-                    margin-top: -42px;
-                    margin-left: 352px;
-                    color:blanchedalmond;
-                    font-family: 'Pacifico', cursive;
-                    
-                    width: 500px;                  
-                }
-
-                .containerpicture h2 {
-                    margin-top: 15px;
-                    margin-left: 632px;
-                    font-family: 'Pacifico', cursive;
-                    font-family: 'Noto Serif', serif;
-                    cursor: pointer; 
-                }
-
-                .containerpicture h2:hover{
-                    color: white;
-                }
-                .containergreeting {
-                    font-family: 'Pacifico', cursive;
-                    color:wblueviolet;
-                    background-color: blanchedalmond;
-                    margin-top: -20px;
-                    
-                }
-
-
-.containermenu {
-       font-family: 'Pacifico', cursive;
-        font-family: 'Noto Serif', serif;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        height: 130px;
-      /*   border: 1px solid red;*/
-        margin-top: -22px;
-        background: rgb(148, 133, 161);
-}
-
-.li {
-    color: blanchedalmond;
-    font-size: 22px;
-    text-align: center;
-    margin-top: 60px;
-    margin-left: 18px;
-    margin-right: 18px;
-  /*  border: 1px solid red;*/
-   height: 130px;
-   align-items: center;
-   cursor: pointer; 
-  
-}
-.li:hover{
-    color:blue;
-}
-
- .search  {
-    border: 1px solid whitesmoke; 
-     width:100%;
-     text-align: center;
-     padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
- }
-
-.containercatalog {
-    font-family: 'Pacifico', cursive;
-        font-family: 'Noto Serif', serif;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-     border: 1px solid whitesmoke; 
-      box-sizing: inherit;
-      flex-wrap: wrap;
-       
-}
-
-.contitems {
-    border: 1px solid whitesmoke; 
-    width: 200px;
-    align-content: space-between;
-    flex-grow: 1;
-    overflow:hidden;
-    box-sizing: inherit;
-    margin: 10px 20px 10px 20px;
-    
-}
-.tablehead {
-    border: 1px solid #ccc;
-    background-color: #f0f0f0;
-}
-
-li a:hover {
-    color: #ffe; /* Цвет текста активного пункта */
-    background-color: #5488af; /* Цвет фона активного пункта */
-   }
-   li:hover table { 
-    display: block; /* При выделении пункта курсором мыши отображается подменю */
-   }
-
-.table {
-    position: absolute; /* Подменю позиционируются абсолютно */
-    display: none;
-}
-
-
-.faq {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: flex-start;
-flex-wrap: nowrap;
-align-content: flex-start;;
-font-family: 'Pacifico', cursive;
-font-family: 'Noto Serif', serif;
-height: 450px;
-border: 1px solid whitesmoke; 
-
-                
-}
-
-.faqtit {
-    font-family: 'Pacifico', cursive;
-    font-size: 25px;
-    margin-left: 40px;
-   
-}
-
-
-.faqtext {
-  /*  align-self: center;*/
-    font-size: 15px;
- /*   text-align: center;*/
-    line-height: 22px;
-    width: 900px;
-    border: 1px solid whitesmoke; 
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.lastwindow{
-  /*  border: 1px solid blue; */
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    box-sizing: inherit;  
-    width: 960px;
-    height: 370px;
-    margin-top:20px;
-    margin-left:20px;
-}
-
-.contacts {
-  /* border: 1px solid red;  */
-    width: 350px;
-    height: 320px;
-    align-content: space-between;
-    flex-grow: 1;
-    overflow:hidden;
-    box-sizing: inherit;
-    
-    margin-top: 10px;
-    padding-left: 20px;
-    padding-right: 30px;
-    font-family: 'Pacifico', cursive;
-    font-family: 'Noto Serif', serif;
-
-}
-
-
-.h1s {
-    font-size: 25px;
-    font-family: 'Pacifico', cursive;
-}
-
-.finishline{
-    width: 960px;
-    height: 50px;
-    color:whitesmoke;
-    background: black;
-    padding-top: 20px;
-}
-                    </style>
-
-
-
-     <div class="containerhead">
-         
-                    <div class="box">Our contacts</div>
-                    <div class="box">Goods catalog</div>
-                    <div class="box">FAQ</div>
-                    <div class="box">My goods</div>
-    </div>        
-        
-        <main>
-            <section class="containerpicture">
-                <h1 align = "center"> <i> Start enjoy your sleeping  
-                    right now</i> </h1> 
-                <h2> Best offer for today <br> Bed pillows -></h2>
-              <!--
-               <img src="https://www.psychologies.co.uk/sites/default/files/styles/psy2_page_header/public/field/image/Sleeping%20woman.jpg" width="960" height="400" alt="Agirl">
-             -->
+        <div class="containerhead">
+             
+             <div class="box">Our contacts</div>
+             <div class="box">Goods catalog</div>
+             <div class="box">FAQ</div>
+             <div class="box">My goods</div>
+</div>        
+ 
+ <main>
+     <section class="containerpicture">
+         <h1 align = "center"> <i> Start enjoy your sleeping  
+             right now</i> </h1> 
+         <h2> Best offer for today <br> Bed pillows -></h2>
+       <!--
+        <img src="https://www.psychologies.co.uk/sites/default/files/styles/psy2_page_header/public/field/image/Sleeping%20woman.jpg" width="960" height="400" alt="Agirl">
+      -->
             </section>
         
         
