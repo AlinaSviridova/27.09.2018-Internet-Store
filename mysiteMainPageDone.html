@@ -5,52 +5,307 @@
     <head>
         <title> Blankets and pillows store </title>
            <meta charset="utf-8">  
+           <link href="2018.09.27 ht website\style.css" rel = "stylesheet">
            <link 
            rel="stylesheet"  
            type="text/css" 
            href="cv2.css">
-       
+           <link href="https://fonts.googleapis.com/css?family=Pacifico&amp;subset=cyrillic" rel="stylesheet">
+           <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Pacifico&amp;subset=cyrillic" rel="stylesheet">
     </head>
    
     <body>
-        <header>
-                <ul class="head-menu">
-                    <li>Our contacts</li>
-                    <li>Goods catalog</li>
-                    <li>FAQ</li>
-                    <li>My goods</li>
-                </ul>
-        </header>
 
+            <style>
+    
+                    body
+                {
+                  margin: 0;
+                  max-width: 960px;
+                 /* border: 1px solid yellow; */
+                }
+                
+                .containerhead
+                {
+                    display: flex;  /* указываем что работаем с флексами*/
+                  flex-direction: row; /*   row (значение по умолчанию) : слева направо (в rtl справа налево)
+                                            row-reverse: справа налево (в rtl слева направо)
+                                            column: сверху вниз
+                                            column-reverse: снизу вверх*/
+                  flex-wrap: wrap-reverse; /*блоки расположены в несколько горизонтальных рядов (если не помещаются в один ряд). Они следуют друг за другом слева направо
+                  */
+                  justify-content: space-around; /* */
+                   align-items: stretch; /* */
+                   align-content: center; /*align-content, которое определяет то, каким образом образовавшиеся ряды блоков будут выровнены по вертикали и как они поделят между собой все пространство flex-контейнера.
+                Важно: align-content работает только в многострочном режиме (т.е. в случае flex-wrap:wrap; или flex-wrap:wrap-reverse;) */
+                  height: 60px; /* */
+                  
+                  background: blueviolet;
+                  font-family: 'Pacifico', cursive;
+                font-family: 'Noto Serif', serif;
+                
+                 
+                }
+                
+                .box
+                {
+                  
+                  color: blanchedalmond;
+                  font-size: 15px;
+                  text-align: center;
+                  line-height: 80px;
+                  width: 200px;
+                  cursor: pointer; 
+                  
+                }
+               
+
+                .containerpicture {
+                /*   border: 1px solid red; */
+                padding-top: 50px;
+                background-image: url("C:/Users/Alina/projects/2018.09.27 ht website/img/SleepingWoman.jpg");
+                height: 300px;
+                margin:0;
+
+            }
+                
+                .containerpicture h1 {
+                  /*  border: 1px solid blue; */
+                    font-size: 40px;
+                    margin-top: -42px;
+                    margin-left: 352px;
+                    color:blanchedalmond;
+                    font-family: 'Pacifico', cursive;
+                    
+                    width: 500px;                  
+                }
+
+                .containerpicture h2 {
+                    margin-top: 15px;
+                    margin-left: 632px;
+                    font-family: 'Pacifico', cursive;
+                    font-family: 'Noto Serif', serif;
+                    cursor: pointer; 
+                }
+
+                .containerpicture h2:hover{
+                    color: white;
+                }
+                .containergreeting {
+                    font-family: 'Pacifico', cursive;
+                    color:wblueviolet;
+                    background-color: blanchedalmond;
+                    margin-top: -20px;
+                    
+                }
+
+
+.containermenu {
+       font-family: 'Pacifico', cursive;
+        font-family: 'Noto Serif', serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 130px;
+      /*   border: 1px solid red;*/
+        margin-top: -22px;
+        background: rgb(148, 133, 161);
+}
+
+.li {
+    color: blanchedalmond;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 18px;
+    margin-right: 18px;
+  /*  border: 1px solid red;*/
+   height: 130px;
+   align-items: center;
+   cursor: pointer; 
+  
+}
+.li:hover{
+    color:blue;
+}
+
+ .search  {
+    border: 1px solid whitesmoke; 
+     width:100%;
+     text-align: center;
+     padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+ }
+
+.containercatalog {
+    font-family: 'Pacifico', cursive;
+        font-family: 'Noto Serif', serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+     border: 1px solid whitesmoke; 
+      box-sizing: inherit;
+      flex-wrap: wrap;
+       
+}
+
+.contitems {
+    border: 1px solid whitesmoke; 
+    width: 200px;
+    align-content: space-between;
+    flex-grow: 1;
+    overflow:hidden;
+    box-sizing: inherit;
+    margin: 10px 20px 10px 20px;
+    
+}
+.tablehead {
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+}
+
+li a:hover {
+    color: #ffe; /* Цвет текста активного пункта */
+    background-color: #5488af; /* Цвет фона активного пункта */
+   }
+   li:hover table { 
+    display: block; /* При выделении пункта курсором мыши отображается подменю */
+   }
+
+.table {
+    position: absolute; /* Подменю позиционируются абсолютно */
+    display: none;
+}
+
+
+.faq {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+flex-wrap: nowrap;
+align-content: flex-start;;
+font-family: 'Pacifico', cursive;
+font-family: 'Noto Serif', serif;
+height: 450px;
+border: 1px solid whitesmoke; 
+
+                
+}
+
+.faqtit {
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    margin-left: 40px;
+   
+}
+
+
+.faqtext {
+  /*  align-self: center;*/
+    font-size: 15px;
+ /*   text-align: center;*/
+    line-height: 22px;
+    width: 900px;
+    border: 1px solid whitesmoke; 
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.lastwindow{
+  /*  border: 1px solid blue; */
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: inherit;  
+    width: 960px;
+    height: 370px;
+    margin-top:20px;
+    margin-left:20px;
+}
+
+.contacts {
+  /* border: 1px solid red;  */
+    width: 350px;
+    height: 320px;
+    align-content: space-between;
+    flex-grow: 1;
+    overflow:hidden;
+    box-sizing: inherit;
+    
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 30px;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Noto Serif', serif;
+
+}
+
+
+.h1s {
+    font-size: 25px;
+    font-family: 'Pacifico', cursive;
+}
+
+.finishline{
+    width: 960px;
+    height: 50px;
+    color:whitesmoke;
+    background: black;
+    padding-top: 20px;
+}
+                    </style>
+
+
+
+     <div class="containerhead">
+         
+                    <div class="box">Our contacts</div>
+                    <div class="box">Goods catalog</div>
+                    <div class="box">FAQ</div>
+                    <div class="box">My goods</div>
+    </div>        
+        
         <main>
-            <section>
-                <h1>Start enjoy your sleeping right now</h1> 
-                <img src="https://www.psychologies.co.uk/sites/default/files/styles/psy2_page_header/public/field/image/Sleeping%20woman.jpg" alt="Agirl">
+            <section class="containerpicture">
+                <h1 align = "center"> <i> Start enjoy your sleeping  
+                    right now</i> </h1> 
+                <h2> Best offer for today <br> Bed pillows -></h2>
+              <!--
+               <img src="https://www.psychologies.co.uk/sites/default/files/styles/psy2_page_header/public/field/image/Sleeping%20woman.jpg" width="960" height="400" alt="Agirl">
+             -->
             </section>
         
         
-        <section>   
-            <h3>How it works</h3>
-                <h4>We have everything you need for your comfortable sleeping. <br> 
+        <section class="containergreeting">   
+            <h3 align = "center">How it works</h3>
+                <h4 align = "center">We have everything you need for your comfortable sleeping. <br> 
                     You can choose anything you want and start getting enough sleep<br> 
                     or keep struggling with your healthy life.<br> 
                     You choose. </h4>
         </section> 
         
-        <nav class="main-menu">
-            <ul>
-                    <li>MattressPads & Toppers</li>
-                    <li>Down Comforters</li>
-                    <li>Blankets</li>
-                    <li>Body pillows</li>
-                    <li>Anti-Allergen</li>
-            </ul>
+        <nav class="containermenu">
+            
+                    <div class="li">MattressPads & Toppers</div>
+                    <div class="li">Down Comforters</div>
+                    <div class="li">Blankets</div>
+                    <div class="li">Body pillows</div>
+                    <div class="li">Anti-Allergen</div>
+    
         </nav>
         
+        <div class="search">
         <p><input type="search" name="q" placeholder="What are you looking for?"> 
             <input type="submit" value="Search"></p>
-        <section class="items">
-            <div>
+        </div>
+
+        <section class="containercatalog">
+            <div class="contitems">
                 <a href="https://s7d1.scene7.com/is/image/BedBathandBeyond/125621361737990p?$478$"><img src="https://s7d1.scene7.com/is/image/BedBathandBeyond/125621361737990p?$229$" alt="Blanket"></a>
                     <p><b>Brookstone® Weighted Blanket</b></p>
                         <ul class=items.list>
@@ -64,7 +319,7 @@
                     <p class=items.price>123$</p>
                     <p style="text-align: left"><button>To order Brookstone</button></p>
             </div>
-            <div>
+            <div class="contitems">
                     <a href="https://s7d2.scene7.com/is/image/BedBathandBeyond/13929133339887m?$478$"><img src="https://s7d2.scene7.com/is/image/BedBathandBeyond/13929133339887m?$229$" alt="Foam Bed Topper"></a>
                     <p><b>Therapedic® Quilted Deluxe 3-Inch Memory Foam Bed Topper</b></p>
                         <ul class=items.list>
@@ -78,7 +333,7 @@
                     <p class=items.price>123$</p>
                     <p style="text-align: left"><button>To order Bed Topper</button></p>
             </div>
-            <div>
+            <div class="contitems">
                    <a href="https://s7d1.scene7.com/is/image/BedBathandBeyond/134617123682c?$478$"><img src="https://s7d2.scene7.com/is/image/BedBathandBeyond/134617123682c?$229$" alt="Pillow"></a>
                     <p><b>Isotonic® Indulgence™ Side Sleeper Pillow</b></p>
                     <ul class=items.list>
@@ -92,7 +347,8 @@
                     <p class=items.price>123$</p>
                     <p style="text-align: left"><button>To order Pillow</button></p>
             </div>
-            <div>
+            <br>
+            <div class="contitems">
                     <a href="https://s7d2.scene7.com/is/image/BedBathandBeyond/3346873245689m?$478$"><img src="https://s7d2.scene7.com/is/image/BedBathandBeyond/3346873245689m?$229$" alt="Mattress Protector"></a>
                     <p><b>Sleep Safe™ Premium Mattress Protector in White</b></p>
                     <ul class=items.list>
@@ -103,12 +359,14 @@
                             <li>Measures 55" W x 73" L</li>
                         </ul>
                         <a href="file:///C:/Users/Alina/projects/2018.09.27%20ht%20website/mysiteTovar4.html" target="_blank">More details</a> <br>
-                    
-                        <table border="2">            <!--значение в пикселяхширины бордюра, фон -->
-                            <tr>                           <!--открывает таблицу -->
-                                <thead>                    <!--следующая строка всегда на одном и том же месте вверху, но это не используют особо -->
+                     <div class="tablehead">
+                            <a href="file:///C:/Users/Alina/projects/2018.09.27%20ht%20website/mysiteTable.html" target="_blank">Check Sizes</a> <br>
+                     
+                        <table border="2" class="table">            
+                            <tr>                           
+                                <thead>                    
                                     <th></th>                     
-                                    <td>Ширина наматрасника от 70 до 75 см</td>           <!--открывает строку -->
+                                    <td>Ширина наматрасника от 70 до 75 см</td>           
                                     <td>Ширина наматрасника от 80 до 95 см</td>
                                     <td>Ширина наматрасника от 100 до 135 см</td>
                                 </thead>
@@ -122,15 +380,15 @@
                             <tr>           
                                 <td>Полутораспальные размеры</td>           
                                 <td>100x180</td>          
-                                <td>120x185.</td>   <!--обьединяем две ячейки столбцов, можно 3 ячейки и тд -->
+                                <td>120x185.</td>   
                                 <td>130x186</td> 
                             </tr>
                         </table>
-                    
+                    </div>
                         <p class=items.price>123$</p>
                     <p style="text-align: left"><button>To order Mattress Protector</button></p>
             </div>
-            <div>
+            <div class="contitems">
                     <a href="https://s7d2.scene7.com/is/image/BedBathandBeyond/9033613297341g?$478$"><img src="https://s7d2.scene7.com/is/image/BedBathandBeyond/9033613297341g?$229$" alt="Down Alternative Comforter"></a>
                     <p><b>Down Alternative Comforter</b></p>
                     <ul class=items.list>
@@ -144,7 +402,7 @@
                     <p class=items.price>123$</p>
                     <p style="text-align: left"><button>To order Down Comforter</button></p>
             </div>
-            <div>
+            <div class="contitems">
                     <a href="https://s7d1.scene7.com/is/image/BedBathandBeyond/10041653306750m?$478$"><img src="https://s7d2.scene7.com/is/image/BedBathandBeyond/10041653306750m?$229$" alt="Blanket"></a>
                     <p><b>INK+IVY Bree Knit Blanket</b></p>
                         <ul class=items.list>
@@ -161,8 +419,8 @@
         </section>
         
         <section class="faq">
-            <h3>FAQ</h3>    
-                    <p>     Q. <i>Is ordering online secure? </i><br>
+            <h3 class="faqtit">FAQ</h3>    
+                    <p class="faqtext">   <b>  Q. <i>Is ordering online secure? </i></b><br>
                              A. Yes. We take the utmost care with the information that you provide us when placing 
                             an order on our website (or through any other means).  The server that hosts our bookstore
                             encrypts the transmission of all credit card and personal customer information using the
@@ -171,12 +429,12 @@
                             us over the Internet. Once we receive the encrypted information, we use a private, 
                             one-of-a-kind key to decode it.
                     </p>
-                    <p>     Q. <i>How will I know that you have received my order?</i> <br>
+                    <p class="faqtext">   <b> Q. <i>How will I know that you have received my order?</i></b> <br>
                             A. You will receive confirmation via e-mail that we have received your order. (Please be sure 
                             to enter your e-mail address correctly on the order form so that we can be sure to deliver 
                             your confirmation to you.)
                     </p>
-                    <p>     Q.<i>How long after placing my order should I expect to receive my shipment?</i><br>
+                    <p class="faqtext">    <b> Q.<i>How long after placing my order should I expect to receive my shipment?</i></b><br>
                             A. All orders are shipped from our warehouse within 48 hours of the order being placed.
                             Purchases shipped anywhere in the continental United States will arrive within 7-10 business
                             days of the order date. Orders being shipped outside of the United States generally arrive 
@@ -184,30 +442,41 @@
                     </p>
         </section>
     </main>
-        
-        <footer class="contacts">
-            <h3>Our contacts</h3>
-            <a href="https://www.bedbathandbeyond.com/store/category/bedding/bedding-basics/13109?pstate=pg_ren:48||pg_pos:1||">Major website</a><br>
-            <a href="https://www.facebook.com/blankets.shop">Social Media</a><br>
-            <p>Phone:
-                    1-800-GO-BEYOND
-                    (800-462-3966)</p>
+       
+        <div class="lastwindow">
+           
+           
+            <div class="contacts"> 
+         
+                    <h3 class="h1s">Our contacts</h3>
+            
+                    <a href="https://www.bedbathandbeyond.com/store/category/bedding/bedding-basics/13109?pstate=pg_ren:48||pg_pos:1||">Major website</a><br>
+                    <a href="https://www.facebook.com/blankets.shop">Social Media</a><br>
+                    <p>Phone:
+                            1-800-GO-BEYOND
+                            (800-462-3966)</p>
 
                     <p>Sign up for our newsletter</p>
-                <input type="text" name="email" /><br>
-                <input type="submit" name="Subscribe" value="Subscribe"/> <br>
-               
+                            <input type="text" name="email" /><br>
+                            <input type="submit" name="Subscribe" value="Subscribe"/> <br>
+            </div> 
+
+            <div class="contacts"> 
                 <fieldset>
-                    <p>Leave your contacts for us to call you back</p>
+                    <p class="h1s"><b>Leave your contacts for us to call you back</b></p>
                     <label>Your Name: <br /> <input type="text" name="name" /></label><br>
                     <label>Phone number: <br /> <input type="text" name="phone" /></label><br>
                 </fieldset>
-               
+            </div>    
 
-        
-        <span>All rights reserved&copy;</span>
-        </footer>
+        </div>
 
+        <div class="finishline">
+            <span> All rights reserved&copy;</span>
+        </div>
+<!-- 
+    -->
+    
     </body>
 
     </html>
